@@ -1,0 +1,20 @@
+[
+  {
+    id: "je-veux",
+    suite: [
+      {
+        id: "manger",
+        suite: [],
+      }
+    ]
+  },
+  {
+    id: "je-suis",
+    suite: [
+      {
+        id: "content",
+        suite: [],
+      }
+    ]
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    id: "je-veux",
+    texte: "Je veux",
+    pictogramme: "je-veux.png",
+    son: "je-veux.mp3",
+  },
+  {
+    id: "je-suis",
+    texte: "Je suis",
+    pictogramme: "je-suis.png",
+    son: "je-suis.mp3",
+  },
+  {
+    id: "manger",
+    texte: "manger",
+    pictogramme: "manger.png",
+    son: "manger.mp3",
+  },
+  {
+    id: "content",
+    texte: "content",
+    pictogramme: "content.png",
+    son: "content.mp3",
+  },
+]
