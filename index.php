@@ -1,8 +1,22 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Baptiste
- * Date: 22/12/2015
- * Time: 15:26
- */
-echo 'Hello World in pictograms';
+function debug($string, $die = true) {
+    echo '<pre>';
+    var_dump($string);
+    echo '</pre>';
+    if ($die) {
+        die;
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<?php include 'views/partial/header.php' ?>
+</head>
+<body>
+<div class="container">
+    <?php include 'views/content.php' ?>
+</div>
+</body>
+</html>
+

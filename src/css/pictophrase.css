@@ -1,0 +1,7 @@
+.panel-clickable {
+    cursor: pointer;
+}
+
+.panel-clickable:hover {
+    box-shadow: 0 0 10px #2bc;
+}
