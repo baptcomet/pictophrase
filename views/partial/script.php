@@ -2,11 +2,13 @@
     var arbre = <?php echo $arbreJson ?>;
     var pictogrammes = <?php echo $pictogrammesJson ?>;
 
+    handleHomeClick();
     handlePictoClick();
 
     function handlePictoClick() {
         $('.panel-clickable').click(function() {
             var pictoId = $(this).attr('id');
+            var picto = pictogrammes[pictoId];
             var nouveauxPictos = arbre[pictoId];
             console.log(nouveauxPictos);
 
@@ -15,9 +17,7 @@
             var liste = $('#liste');
             liste.fadeOut('slow', function() {
                 var listeHtml = '';
-                var i;
-                for (i = 0; i < nouveauxPictos.length; i++) {
-                    var nouveauPictoId = nouveauxPictos[i];
+                for (var nouveauPictoId in nouveauxPictos) {
                     var nouveauPicto = pictogrammes[nouveauPictoId];
                     listeHtml += '<div class="col-md-2">';
                     listeHtml += '<div class="panel panel-default panel-clickable" id="' + nouveauPictoId + '">';
@@ -30,6 +30,15 @@
                 handlePictoClick();
                 liste.fadeIn('slow');
             });
+
+            var breadcrumbHtml = '<li>' + picto['texte'] + '</li>';
+            $('#phrase').append(breadcrumbHtml);
+        });
+    }
+
+    function handleHomeClick() {
+        $('#home').click(function() {
+            location.reload();
         });
     }
 

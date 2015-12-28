@@ -1,5 +1,5 @@
-<ol class="breadcrumb">
-    <?php foreach ($arbre as $pictoId => $suite) : ?>
-        <li><?php echo $pictogrammes[$pictoId]['texte'] ?></li>
-    <?php endforeach ?>
+<ol class="breadcrumb" id="phrase">
+    <li>
+        <span class="glyphicon glyphicon-home pointer" id="home"></span>
+    </li>
 </ol>

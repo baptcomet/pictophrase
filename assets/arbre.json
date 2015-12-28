@@ -1,8 +1,8 @@
 {
-  "je-veux": [
-    "manger"
-  ],
-  "je-suis": [
-    "content"
-  ]
+  "je-veux": {
+    "manger": {}
+  },
+  "je-suis": {
+    "content": {}
+  }
 }
