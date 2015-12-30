@@ -7,6 +7,12 @@
                      class="img-responsive">
                 <div class="panel-body">
                     <?php echo $picto['texte'] ?>
+                    <br/>
+                    <?php // TODO : abstraire ce controle avec un glyphicon play/pause + ecrire ça dans le JS à la génération de picto ?>
+                    <audio controls>
+                        <source src="assets/sons/<?php echo $picto['son'] ?>" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
                 </div>
             </div>
         </div>
